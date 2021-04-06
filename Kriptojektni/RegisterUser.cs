@@ -20,7 +20,14 @@ namespace Kriptojektni
                 Directory.CreateDirectory(newUserDirectoryPath);
                 Directory.CreateDirectory(newUserDirectoryPath + "\\home");
             }
+            if(!CertificateChecker.certificateValid(certificatePath))
+            {
+                MessageBox.Show("Your certificate is invalid!");
+                return;
+            }
+
             X509Certificate2 userCertificate = new X509Certificate2(certificatePath);
+            
 
             FileStream fileStream = new FileStream(Application.Current.Properties["lookupTableLocation"].ToString(), FileMode.Open);
             fileStream.Seek(-3, SeekOrigin.End);

@@ -69,6 +69,7 @@ namespace Kriptojektni
                 fileopener.StartInfo.FileName = "explorer";
                 fileopener.StartInfo.Arguments = "\"" + newTempFileName + "\"";
                 fileopener.Start();
+                streamOfLocalFile.Close();
             }
             catch (Exception)
             {

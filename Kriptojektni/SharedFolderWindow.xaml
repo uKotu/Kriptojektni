@@ -8,6 +8,6 @@
         Title="SharedFolderWindow" Height="450" Width="500">
     <Grid>
         <TreeView Name="Tree" Margin="0,0,131,0"/>
-        <Button Name="OpenSharedFileButton" Content="Open file" HorizontalAlignment="Left" Margin="397,45,0,0" VerticalAlignment="Top" Width="80" Click="OpenSharedFileButton_Click"/>
+        <Button Name="OpenSharedFileButton" Content="Open file" HorizontalAlignment="Left" Margin="393,45,0,0" VerticalAlignment="Top" Width="80" Click="OpenSharedFileButton_Click"/>
     </Grid>
 </Window>

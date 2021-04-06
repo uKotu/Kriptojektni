@@ -48,7 +48,7 @@ namespace Kriptojektni
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error!");
                     return;
                 }
             }

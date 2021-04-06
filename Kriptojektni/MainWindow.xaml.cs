@@ -17,6 +17,7 @@ namespace Kriptojektni
         public MainWindow()
         {
             InitializeComponent();
+            this.Title += " - " + Application.Current.Properties["Username"];
 
             foreach (string s in Directory.GetFileSystemEntries(rootFolder))
             {
