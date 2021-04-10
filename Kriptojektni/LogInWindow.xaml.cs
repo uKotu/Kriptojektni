@@ -14,7 +14,7 @@ namespace Kriptojektni
             //setup of config locations, could be extracted to an outside file for more flexibility
             InitializeComponent();
             Application.Current.Properties.Add("CA", "C:\\Users\\Lenovo\\Desktop\\kripto\\ca\\CA.crt");
-            Application.Current.Properties.Add("CRL", "C:\\Users\\Lenovo\\Desktop\\kripto\\ca\\root.crl");
+            Application.Current.Properties.Add("CRL", "C:\\Users\\Lenovo\\Desktop\\kripto\\ca\\lista.pem");
             Application.Current.Properties.Add("lookupTableLocation", "C:\\Users\\Lenovo\\Desktop\\kripto\\lookuptable.txt");
             Application.Current.Properties.Add("root", "C:\\Users\\Lenovo\\Desktop\\kripto\\root");
             Application.Current.Properties.Add("sharedFolderLocation", "C:\\Users\\Lenovo\\Desktop\\kripto\\root\\shared");

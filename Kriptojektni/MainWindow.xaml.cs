@@ -235,7 +235,7 @@ namespace Kriptojektni
             {
                 MessageBox.Show("No folder selected!");
             }
-
+            refresh();
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)

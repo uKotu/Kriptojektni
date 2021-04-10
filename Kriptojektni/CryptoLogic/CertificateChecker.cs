@@ -26,9 +26,9 @@ namespace Kriptojektni
 
             X509CrlParser crlParser = new X509CrlParser();
 
-            /*fs = new FileStream(CRL, FileMode.Open);
+            fs = new FileStream(CRL, FileMode.Open);
             X509Crl CRLCertificate = crlParser.ReadCrl(fs);
-            fs.Close();*/
+            fs.Close();
 
             //verify that the certificate is signed by the CA
             try
@@ -40,7 +40,7 @@ namespace Kriptojektni
                 MessageBox.Show("Your certificate is not signed by an authorized CA");
                 return false;
             }
-            /*
+            
             //verify that the crl is signed by the CA
             try
             {
@@ -58,7 +58,7 @@ namespace Kriptojektni
                 MessageBox.Show("Your certificate has been revoked");
                 return false;
             }
-            */
+            
             //verify the certificate time validity
             if (!userCertificate.IsValidNow)
             {
